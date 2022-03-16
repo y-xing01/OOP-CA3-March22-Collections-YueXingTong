@@ -13,27 +13,27 @@ public class App
     {
         //Question 1
         questionOnePartA();
-        questionOnePartB();
-        questionOnePartC();
-        questionOnePartD();
-
-        //Question 2
-        questionTwoPartA();
-        questionTwoPartB();
-        questionTwoPartC();
-        questionTwoPartD();
-
-        //Question 3
-        List<String> oneHundredStrings = new ArrayList<>();
-        populateOneHundredStrings(oneHundredStrings);
-        questionThreePartA(oneHundredStrings);
-        questionThreePartB();
-
-        //Question 4
-        compareTwoStudents();
-        questionFourPartA();
-        questionFourPartB();
-        questionFourPartC();
+//        questionOnePartB();
+//        questionOnePartC();
+//        questionOnePartD();
+//
+//        //Question 2
+//        questionTwoPartA();
+//        questionTwoPartB();
+//        questionTwoPartC();
+//        questionTwoPartD();
+//
+//        //Question 3
+//        List<String> oneHundredStrings = new ArrayList<>();
+//        populateOneHundredStrings(oneHundredStrings);
+//        questionThreePartA(oneHundredStrings);
+//        questionThreePartB();
+//
+//        //Question 4
+//        compareTwoStudents();
+//        questionFourPartA();
+//        questionFourPartB();
+//        questionFourPartC();
     }
 
     //The method below relates to Question 4
@@ -91,6 +91,18 @@ public class App
             {
                 oneHundredStrings.add("Swift");
             }
+        }
+    }
+
+    private static void questionOnePartA(){
+        ArrayList<Student> studentList = new ArrayList<>();
+        studentList.add(new Student(1, "John", 20));
+        studentList.add(new Student(2, "Nathan", 18));
+        studentList.add(new Student(3, "James", 22));
+        studentList.add(new Student(4, "Andrew", 21));
+
+        for (Student s : studentList){
+            System.out.println("Student ID : " + s.getId() + ", Student Name : " + s.getName() + ", Student Age : " + s.getAge());
         }
     }
 }
