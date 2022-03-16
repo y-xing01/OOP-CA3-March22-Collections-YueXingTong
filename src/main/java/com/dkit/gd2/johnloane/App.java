@@ -221,6 +221,16 @@ public class App
 //        return nameCount;
 //    }
 
+//    public static ArrayList<String> removeRepeat(List<String> oneHundredStrings){
+//        ArrayList<String> nonDuplicate = new ArrayList<String>();
+//        for(String text: oneHundredStrings){
+//            if(!nonDuplicate.contains(text)){
+//                nonDuplicate.add(text);
+//            }
+//        }
+//        return nonDuplicate;
+//    }
+//
     public static String questionFourPartA(){
         return "Question 4A : Because the Student Class has no equals and hashcode methods";
     }
